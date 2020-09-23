@@ -1,7 +1,8 @@
 module.exports = {
     db: {
-        host: 'mongodb://localhost:27017/',
-        database: 'finance'
+        host: 'mongodb://139.159.201.22:12306/',
+        database: 'finance',
+        url: 'mongodb://root:123456,@139.159.201.22:12306/finance?authSource=admin'
     },
     resCode: {
         SUCCESS: 0,

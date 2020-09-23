@@ -13,11 +13,13 @@ function login(options, resolve, reject) {
 }
 
 function register(options, resolve, reject) {
+    console.log(options)
     if (!options.tel || !options.pwd) {
         reject(result.errorData('手机号或密码不能为空'));
         return;
     }
     UserSchema.insertMany(options, function (err, doc) {
+        console.log(doc)
         _register({err, doc, resolve, reject})
     });
 }
